@@ -1,0 +1,113 @@
+/*Index*/
+$colorPrincipal: #6b9080;
+$colorSecunadario: #a4c3b2;
+$colorLetra: #aef4f4;
+$letraSecundaria: #f6fff8;
+
+body {
+    background-color: $colorSecunadario;
+}
+
+
+header {
+    background-color: $colorPrincipal;
+    font-size: 30px;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+
+
+        li {
+            padding: 10px;
+            margin: 20px;
+
+            a {
+                text-decoration: none;
+                color: $colorLetra;
+
+                &:hover {
+                    background-color: $colorLetra;
+                    color: $colorPrincipal;
+                }
+
+                &:active {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.textoPrincipal {
+    h1 {
+        font-size: 50px;
+        background-color: $colorLetra;
+        color: $colorPrincipal;
+        text-align: center;
+
+    }
+
+    p {
+        font-size: 25px;
+        background-color: $letraSecundaria;
+        color: black;
+        text-align: justify;
+        padding: 15px;
+    }
+}
+
+.Galeria {
+    font-size: 30px;
+    background-color: antiquewhite;
+    color: $colorPrincipal;
+    text-align: center;
+}
+
+.tamaño {
+    width: 350px;
+    height: 300px;
+    display: inline-flex;
+    flex-wrap: nowrap;
+}
+
+
+
+footer {
+    background-color: $colorPrincipal;
+    margin: 5px;
+    padding: 5px;
+
+    h5 {
+        font-size: 30px;
+        color: $letraSecundaria;
+        text-align: center;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        padding: 5px;
+
+
+        li {
+
+            a {
+                font-size: 25px;
+                color: $colorLetra;
+                text-decoration: none;
+
+
+            }
+        }
+    }
+
+}
+/*Fin del Index*/

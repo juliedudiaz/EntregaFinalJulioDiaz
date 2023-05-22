@@ -1,0 +1,324 @@
+@charset "UTF-8";
+/*Index*/
+body {
+  background-color: #a4c3b2;
+}
+
+header {
+  background-color: #6b9080;
+  font-size: 30px;
+}
+header ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+header ul li {
+  padding: 10px;
+  margin: 20px;
+}
+header ul li a {
+  text-decoration: none;
+  color: #aef4f4;
+}
+header ul li a:hover {
+  background-color: #aef4f4;
+  color: #6b9080;
+}
+header ul li a:active {
+  color: white;
+}
+
+.textoPrincipal h1 {
+  font-size: 50px;
+  background-color: #aef4f4;
+  color: #6b9080;
+  text-align: center;
+}
+.textoPrincipal p {
+  font-size: xx-large;
+  background-color: #f6fff8;
+  color: black;
+  text-align: justify;
+}
+
+.Galeria {
+  font-size: 30px;
+  background-color: antiquewhite;
+  color: #6b9080;
+  text-align: center;
+}
+
+.tamaño {
+  width: 350px;
+  height: 300px;
+  display: inline-flex;
+  flex-wrap: nowrap;
+}
+
+footer {
+  background-color: #6b9080;
+  margin: 5px;
+  padding: 5px;
+}
+footer h5 {
+  font-size: 30px;
+  color: #f6fff8;
+  text-align: center;
+}
+footer ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 5px;
+}
+footer ul li a {
+  font-size: 25px;
+  color: #aef4f4;
+  text-decoration: none;
+}
+footer ul li a:hover {
+  background-color: #aef4f4;
+  color: #6b9080;
+  font-size: 30px;
+}
+footer ul li a:active {
+  color: black;
+}
+
+/*Fin del Index*/
+/*Inicia Pagina Historia*/
+.caja {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "menu menu" "H1 H1" "historia arquitectura" "historia arquitectura" "pie pie";
+}
+.caja .H1 {
+  font-size: 50px;
+  background-color: #f6fff8;
+  color: #6b9080;
+  text-align: center;
+}
+.caja .historia {
+  padding: 25px;
+}
+.caja .historia h2 {
+  font-size: 30px;
+  background-color: #f6fff8;
+  color: #6b9080;
+  text-align: center;
+  padding: 25px;
+}
+.caja .historia p {
+  font-size: large;
+  color: black;
+  text-align: justify;
+  padding: 25px;
+}
+.caja .arquitectura {
+  padding: 25px;
+}
+.caja .arquitectura h2 {
+  font-size: 30px;
+  background-color: #f6fff8;
+  color: #6b9080;
+  text-align: center;
+  padding: 25px;
+}
+.caja .arquitectura p {
+  font-size: large;
+  color: black;
+  text-align: justify;
+  padding: 25px;
+}
+.caja img {
+  padding: 25px;
+}
+
+.menu {
+  grid-area: menu;
+}
+
+.H1 {
+  grid-area: H1;
+}
+
+.historia {
+  grid-area: historia;
+}
+
+.arquitectura {
+  grid-area: arquitectura;
+}
+
+.pie {
+  grid-area: pie;
+  display: grid;
+  justify-content: end;
+  align-content: end;
+}
+
+/*Fin Pagina Historia*/
+/*Inicio Pagina Gastronomia*/
+.bodyGastro {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.tituloGastro {
+  color: #6b9080;
+  font-size: 50px;
+  text-align: center;
+}
+
+/*Inicio Pagina Turismo*/
+.turismo h1 {
+  font-size: 50px;
+  background-color: #aef4f4;
+  color: #6b9080;
+  text-align: center;
+}
+.turismo h2 {
+  font-size: 30px;
+  background-color: #aef4f4;
+  color: #6b9080;
+  text-align: center;
+}
+.turismo p {
+  font-size: 20px;
+  background-color: #f6fff8;
+  color: black;
+  text-align: justify;
+  padding: 25px;
+}
+.turismo img {
+  padding: 25px;
+}
+
+.total {
+  display: grid;
+  height: 700px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.1fr 0.1fr 0.5fr 0.5fr 0.5fr 0.1fr;
+  grid-template-areas: "menu menu" "titulo titulo" "primero cuarto" "segundo quinto" "tercero sexto" "footer footer";
+  column-gap: 15px;
+  row-gap: 15px;
+}
+
+.navegador {
+  grid-area: menu;
+}
+
+.lugar {
+  grid-area: titulo;
+}
+
+.primero {
+  grid-area: primero;
+}
+
+.segundo {
+  grid-area: segundo;
+}
+
+.tercero {
+  grid-area: tercero;
+}
+
+.cuarto {
+  grid-area: cuarto;
+}
+
+.quinto {
+  grid-area: quinto;
+}
+.quinto img {
+  padding: 25px;
+}
+
+.sexto {
+  grid-area: sexto;
+}
+
+.redes {
+  grid-area: footer;
+  display: grid;
+  justify-content: end;
+  align-content: end;
+}
+
+/*Fin Pagina Turismo*/
+/*Inicio Pagina Contactos*/
+.title {
+  background-color: #a4c3b2;
+  font-size: 50px;
+  color: #6b9080;
+  text-align: center;
+}
+
+.contacto {
+  width: 60%;
+}
+.contacto .formulario {
+  font-weight: bolder;
+  font-size: 20px;
+  color: black;
+  padding: 15px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.contacto .formulario label {
+  padding-top: 25px;
+  padding-bottom: 5px;
+  flex-grow: 1;
+}
+.contacto .formulario .area {
+  width: 300px;
+  height: 25px;
+  flex-grow: 1;
+}
+.contacto .formulario .mensaje {
+  width: 400px;
+  height: 400px;
+  font-size: 14px;
+  flex-grow: 1;
+}
+.contacto .formulario .boton {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding: 3px 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  color: #6b9080;
+}
+
+.piecontacto {
+  display: grid;
+  justify-content: end;
+  align-content: end;
+}
+
+/*Fin Pagina Historia*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/*Variables*/
+
+/*# sourceMappingURL=style.css.map */

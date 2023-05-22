@@ -1,0 +1,482 @@
+@charset "UTF-8";
+/*Index*/
+body {
+  background-color: #a4c3b2;
+}
+
+header {
+  background-color: #6b9080;
+  font-size: 30px;
+}
+header ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+header ul li {
+  padding: 10px;
+  margin: 20px;
+}
+header ul li a {
+  text-decoration: none;
+  color: #aef4f4;
+}
+header ul li a:hover {
+  background-color: #aef4f4;
+  color: #6b9080;
+}
+header ul li a:active {
+  color: white;
+}
+
+.textoPrincipal h1 {
+  font-size: 50px;
+  background-color: #aef4f4;
+  color: #6b9080;
+  text-align: center;
+}
+.textoPrincipal p {
+  font-size: 25px;
+  background-color: #f6fff8;
+  color: black;
+  text-align: justify;
+  padding: 15px;
+}
+
+.Galeria {
+  font-size: 30px;
+  background-color: antiquewhite;
+  color: #6b9080;
+  text-align: center;
+}
+
+.tamaño {
+  width: 350px;
+  height: 300px;
+  display: inline-flex;
+  flex-wrap: nowrap;
+}
+
+footer {
+  background-color: #6b9080;
+  margin: 5px;
+  padding: 5px;
+}
+footer h5 {
+  font-size: 30px;
+  color: #f6fff8;
+  text-align: center;
+}
+footer ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding: 5px;
+}
+footer ul li a {
+  font-size: 25px;
+  color: #aef4f4;
+  text-decoration: none;
+}
+
+/*Fin del Index*/
+/*Inicia Pagina Historia*/
+.caja {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "menu menu" "H1 H1" "historia arquitectura" "historia arquitectura" "pie pie";
+}
+.caja .H1 {
+  font-size: 50px;
+  background-color: #f6fff8;
+  color: #6b9080;
+  text-align: center;
+}
+.caja .historia {
+  padding: 25px;
+}
+.caja h2 {
+  font-size: 30px;
+  background-color: #f6fff8;
+  color: #6b9080;
+  text-align: center;
+  padding: 25px;
+}
+.caja p {
+  font-size: large;
+  color: black;
+  text-align: justify;
+  padding: 25px;
+}
+.caja .arquitectura {
+  padding: 25px;
+}
+.caja img {
+  padding: 25px;
+}
+
+.menu {
+  grid-area: menu;
+}
+
+.H1 {
+  grid-area: H1;
+}
+
+.historia {
+  grid-area: historia;
+}
+
+.arquitectura {
+  grid-area: arquitectura;
+}
+
+.pie {
+  grid-area: pie;
+  display: grid;
+  justify-content: end;
+  align-content: end;
+}
+
+/*Fin Pagina Historia*/
+/*inicio pagina de gastronomia*/
+.bodyGastro .tituloGastro {
+  font-size: 50px;
+  background-color: #aef4f4;
+  color: #6b9080;
+  text-align: center;
+}
+.bodyGastro .mainGastro {
+  font-size: 20px;
+  color: black;
+  text-align: justify;
+  padding: 25px;
+}
+.bodyGastro section h3 {
+  font-size: 30px;
+  background-color: #f6fff8;
+  color: #6b9080;
+  text-align: center;
+  padding: 25px;
+}
+.bodyGastro section p {
+  font-size: 20px;
+  background-color: #6b9080;
+  color: #f6fff8;
+  padding: 25px;
+}
+.bodyGastro section img {
+  padding: 25px;
+}
+.bodyGastro .contenedorTotal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+/*Inicio Pagina Turismo*/
+.total {
+  display: grid;
+  height: 700px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.1fr 0.1fr 0.5fr 0.5fr 0.5fr 0.1fr;
+  grid-template-areas: "menu menu" "titulo titulo" "primero cuarto" "segundo quinto" "tercero sexto" "footer footer";
+  column-gap: 15px;
+  row-gap: 15px;
+}
+.total h1 {
+  font-size: 50px;
+  background-color: #aef4f4;
+  color: #6b9080;
+  text-align: center;
+}
+.total h2 {
+  font-size: 30px;
+  background-color: #aef4f4;
+  color: #6b9080;
+  text-align: center;
+}
+.total p {
+  font-size: 20px;
+  background-color: #f6fff8;
+  color: black;
+  text-align: justify;
+  padding: 25px;
+}
+.total img {
+  padding: 25px;
+}
+
+.navegador {
+  grid-area: menu;
+}
+
+.lugar {
+  grid-area: titulo;
+}
+
+.primero {
+  grid-area: primero;
+}
+
+.segundo {
+  grid-area: segundo;
+}
+
+.tercero {
+  grid-area: tercero;
+}
+
+.cuarto {
+  grid-area: cuarto;
+}
+
+.quinto {
+  grid-area: quinto;
+}
+.quinto img {
+  padding: 25px;
+}
+
+.sexto {
+  grid-area: sexto;
+}
+
+.redes {
+  grid-area: footer;
+  display: grid;
+  justify-content: end;
+  align-content: end;
+}
+
+/*Fin Pagina Turismo*/
+/*Inicio Pagina Contactos*/
+.title {
+  background-color: #a4c3b2;
+  font-size: 50px;
+  color: #6b9080;
+  text-align: center;
+}
+
+.contacto {
+  width: 60%;
+}
+.contacto .formulario {
+  font-weight: bolder;
+  font-size: 20px;
+  color: black;
+  padding: 15px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.contacto .formulario .area {
+  width: 400px;
+  height: 35px;
+  flex-grow: 1;
+}
+.contacto .formulario .mensaje {
+  width: 400px;
+  height: 400px;
+  font-size: 14px;
+  flex-grow: 1;
+}
+.contacto .formulario .boton {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding: 3px 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  color: #6b9080;
+}
+
+.piecontacto {
+  display: grid;
+  justify-content: end;
+  align-content: end;
+}
+
+/*Fin Pagina Historia*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/*Variables*/
+/*index mediaqueries tamaño tablet 768px*/
+@media screen and (max-width: 768px) {
+  body {
+    background-color: #f3b578;
+  }
+  body header {
+    background-color: #f78376;
+  }
+  body ul {
+    display: flex;
+    flex-direction: column;
+  }
+  body ul li {
+    padding: 0;
+    margin: 0;
+  }
+  body ul li a:hover {
+    background-color: #da4c66;
+    color: #8f3c68;
+  }
+  body ul li a:active {
+    color: #3f3557;
+  }
+  body .textoPrincipal h1 {
+    background-color: #8f3c68;
+    color: #f78376;
+  }
+  body .textoPrincipal p {
+    background-color: #f3b578;
+    font-size: 15px;
+  }
+  body footer {
+    background-color: #f3b578;
+    margin: 5px;
+    padding: 5px;
+  }
+  body footer h5 {
+    font-size: 20px;
+  }
+  body footer ul {
+    justify-content: center;
+  }
+}
+/*Index Mediaqueries tamaño Celular 500px*/
+/*Historia Mediaqueries tamaño Tablet 768px*/
+@media screen and (max-width: 768px) {
+  .caja .H1 {
+    font-size: 35px;
+    background-color: #8f3c68;
+    color: #f78376;
+  }
+  .caja .historia {
+    padding: 15px;
+  }
+  .caja h2 {
+    font-size: 20px;
+    background-color: #da4c66;
+    color: #f78376;
+  }
+}
+/*Historia Mediaqueries tamaño Celular 500px*/
+@media screen and (max-width: 500px) {
+  .caja {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "menu" "H1" "historia" "arquitectura" "pie";
+  }
+}
+/*Gastronomia Mediaqueries tamaño tablet 768px*/
+@media screen and (max-width: 768px) {
+  .bodyGastro .tituloGastro {
+    font-size: 30px;
+    background-color: #8f3c68;
+    color: #f78376;
+  }
+  .bodyGastro .mainGastro p {
+    font-size: 15px;
+    padding: 20px;
+  }
+  .bodyGastro section h3 {
+    font-size: 20px;
+    background-color: #da4c66;
+    color: #f78376;
+  }
+  .bodyGastro section p {
+    background-color: #f3b578;
+    font-size: 15px;
+    color: black;
+  }
+  .bodyGastro section img {
+    padding: 15px;
+  }
+  .bodyGastro section .contenedorTotal {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/*Gastronomia Mediaqueries tamaño Celular 500px*/
+/*Funciona sin tener que hacer cambios*/
+/*Turismo Mediaqueries tamaño Tablet 768px*/
+@media screen and (max-width: 768px) {
+  .total h1 {
+    font-size: 30px;
+    background-color: #8f3c68;
+    color: #f78376;
+  }
+  .total h2 {
+    font-size: 20px;
+    background-color: #da4c66;
+    color: #f78376;
+  }
+  .total p {
+    font-size: 15px;
+  }
+  .total .imagen {
+    width: 250px;
+    height: 200px;
+  }
+}
+/*Turismo Mediaqueries tamaño Celular 500px*/
+@media screen and (max-width: 500px) {
+  .total {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "menu" "titulo" "primero" "segundo" "tercero" "cuarto" "quinto" "sexto" "footer";
+  }
+}
+/*Contacto Mediaqueries tamaño Tablet 768px*/
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 30px;
+    background-color: #8f3c68;
+    color: #f78376;
+  }
+  .contacto {
+    width: 100%;
+  }
+  .formulario .area {
+    width: 300 px;
+    height: 30px;
+  }
+  .formulario .mensaje {
+    width: 300px;
+    height: 200px;
+  }
+}
+/*Contacto Mediaqueries tamaño Celular 500px*/
+@media screen and (max-width: 500px) {
+  .contacto {
+    width: 50%;
+  }
+  .contacto .formulario .area {
+    width: 200px;
+    height: 30px;
+  }
+  .contacto .formulario .mensaje {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,282 @@
+@import "index";
+@import "historia";
+@import "gastronomia";
+@import "turismo";
+@import "contacto";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/*Variables*/
+$colorPrincipal: #6b9080;
+$colorSecunadario: #a4c3b2;
+$colorLetra: #aef4f4;
+$letraSecundaria: #f6fff8;
+$fondoMq: #f3b578;
+$nuevaPaleta: #f78376;
+$colorNuevo: #da4c66;
+$nuevoColor: #8f3c68;
+$colorNc: #3f3557;
+
+/*index mediaqueries tamaño tablet 768px*/
+@media screen and (max-width: 768px) {
+    body {
+        background-color: $fondoMq;
+
+        header {
+            background-color: $nuevaPaleta;
+        }
+
+        ul {
+
+            display: flex;
+            flex-direction: column;
+
+            li {
+                padding: 0;
+                margin: 0;
+
+                a {
+                    &:hover {
+                        background-color: $colorNuevo;
+                        color: $nuevoColor;
+                    }
+
+                    &:active {
+                        color: $colorNc;
+                    }
+                }
+            }
+        }
+
+        .textoPrincipal {
+            h1 {
+                background-color: $nuevoColor;
+                color: $nuevaPaleta;
+            }
+
+            p {
+                background-color: $fondoMq;
+                font-size: 15px;
+            }
+        }
+
+        footer {
+            background-color: $fondoMq;
+            margin: 5px;
+            padding: 5px;
+
+            h5 {
+                font-size: 20px;
+
+            }
+            ul {
+                justify-content: center;
+            }
+        }
+    }
+
+}
+
+/*Index Mediaqueries tamaño Celular 500px*/
+
+@media screen and (max-width: 500px) {}
+
+
+/*Historia Mediaqueries tamaño Tablet 768px*/
+
+
+@media screen and (max-width: 768px) {
+    .caja {
+
+        .H1 {
+            font-size: 35px;
+            background-color: $nuevoColor;
+            color: $nuevaPaleta;
+        }
+
+        .historia {
+            padding: 15px;
+        }
+
+        h2 {
+            font-size: 20px;
+            background-color: $colorNuevo;
+            color: $nuevaPaleta;
+        }
+
+
+    }
+
+}
+
+/*Historia Mediaqueries tamaño Celular 500px*/
+
+@media screen and (max-width: 500px) {
+
+    .caja {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "menu"
+            "H1"
+            "historia"
+            "arquitectura"
+            "pie";
+    }
+}
+
+/*Gastronomia Mediaqueries tamaño tablet 768px*/
+
+@media screen and (max-width:768px) {
+    .bodyGastro {
+        .tituloGastro {
+            font-size: 30px;
+            background-color: $nuevoColor;
+            color: $nuevaPaleta;
+
+        }
+
+        .mainGastro {
+            p {
+                font-size: 15px;
+                padding: 20px;
+            }
+        }
+
+        section {
+            h3 {
+                font-size: 20px;
+                background-color: $colorNuevo;
+                color: $nuevaPaleta;
+            }
+
+            p {
+                background-color: $fondoMq;
+                font-size: 15px;
+                color: black;
+            }
+
+            img {
+                padding: 15px;
+            }
+
+            .contenedorTotal {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+
+}
+
+/*Gastronomia Mediaqueries tamaño Celular 500px*/
+/*Funciona sin tener que hacer cambios*/
+
+/*Turismo Mediaqueries tamaño Tablet 768px*/
+
+@media screen and (max-width: 768px) {
+    .total {
+        h1 {
+            font-size: 30px;
+            background-color: $nuevoColor;
+            color: $nuevaPaleta;
+        }
+
+        h2 {
+            font-size: 20px;
+            background-color: $colorNuevo;
+            color: $nuevaPaleta;
+
+        }
+
+        p {
+            font-size: 15px;
+
+        }
+
+        .imagen {
+            width: 250px;
+            height: 200px;
+        }
+    }
+}
+
+/*Turismo Mediaqueries tamaño Celular 500px*/
+
+@media screen and (max-width: 500px) {
+    .total {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "menu"
+            "titulo"
+            "primero"
+            "segundo"
+            "tercero"
+            "cuarto"
+            "quinto"
+            "sexto"
+            "footer";
+    }
+
+}
+
+/*Contacto Mediaqueries tamaño Tablet 768px*/
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 30px;
+        background-color: $nuevoColor;
+        color: $nuevaPaleta;
+
+    }
+
+    .contacto {
+        width: 100%;
+    }
+
+    .formulario {
+        .area {
+            width: 300 px;
+            height: 30px;
+        }
+
+        .mensaje {
+            width: 300px;
+            height: 200px;
+        }
+
+    }
+
+}
+
+/*Contacto Mediaqueries tamaño Celular 500px*/
+
+@media screen and (max-width: 500px) {
+    .contacto {
+        width: 50%;
+
+        .formulario {
+            .area {
+                width: 200px;
+                height: 30px;
+            }
+
+            .mensaje {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+
+}

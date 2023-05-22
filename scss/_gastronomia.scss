@@ -1,0 +1,50 @@
+/*inicio pagina de gastronomia*/
+$colorPrincipal: #6b9080;
+$colorSecunadario: #a4c3b2;
+$colorLetra: #aef4f4;
+$letraSecundaria: #f6fff8;
+
+.bodyGastro {
+    .tituloGastro {
+        font-size: 50px;
+        background-color: $colorLetra;
+        color: $colorPrincipal;
+        text-align: center;
+    }
+
+    .mainGastro {
+        font-size: 20px;
+        color: black;
+        text-align: justify;
+        padding: 25px;
+    }
+
+    section {
+        h3 {
+            font-size: 30px;
+            background-color: $letraSecundaria;
+            color: $colorPrincipal;
+            text-align: center;
+            padding: 25px;
+        }
+
+        p {
+            font-size: 20px;
+            background-color: $colorPrincipal;
+            color: $letraSecundaria;
+            padding: 25px;
+        }
+
+        img {
+            padding: 25px;
+        }
+    }
+
+    .contenedorTotal {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+}

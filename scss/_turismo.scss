@@ -1,0 +1,81 @@
+/*Inicio Pagina Turismo*/
+$colorPrincipal: #6b9080;
+$colorSecunadario: #a4c3b2;
+$colorLetra: #aef4f4;
+$letraSecundaria: #f6fff8;
+
+
+.total {
+    h1 {
+        font-size: 50px;
+    background-color: $colorLetra;
+    color: $colorPrincipal;
+    text-align: center;
+}
+    h2 {
+        font-size: 30px;
+    background-color: $colorLetra;
+    color: $colorPrincipal;
+    text-align: center;
+    }
+    p {
+        font-size: 20px;
+        background-color: $letraSecundaria;
+        color: black;
+        text-align: justify;
+        padding: 25px;
+    }
+    img {
+        padding: 25px;
+    }
+    display: grid;
+    height: 700px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.1fr 0.1fr 0.5fr 0.5fr 0.5fr 0.1fr;
+    grid-template-areas: 
+    "menu menu"
+    "titulo titulo"
+    "primero cuarto"
+    "segundo quinto"
+    "tercero sexto"
+    "footer footer";
+    column-gap: 15px;
+    row-gap: 15px;
+    
+
+}
+.navegador {
+    grid-area: menu;
+    
+}
+.lugar {
+    grid-area: titulo;
+}
+.primero {
+    grid-area: primero;
+}
+.segundo {
+    grid-area: segundo;
+}
+.tercero {
+    grid-area: tercero;
+}
+.cuarto {
+    grid-area: cuarto;
+} 
+.quinto {
+    grid-area: quinto;
+    img {
+        padding: 25px;
+    }
+}
+.sexto {
+    grid-area: sexto;
+}
+.redes {
+    grid-area: footer;
+    display: grid;
+    justify-content: end;
+    align-content: end;
+}
+/*Fin Pagina Turismo*/

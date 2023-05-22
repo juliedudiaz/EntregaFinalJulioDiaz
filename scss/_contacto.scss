@@ -1,0 +1,65 @@
+/*Inicio Pagina Contactos*/
+$colorPrincipal: #6b9080;
+$colorSecunadario: #a4c3b2;
+$colorLetra: #aef4f4;
+$letraSecundaria: #f6fff8;
+
+.title {
+    background-color: $colorSecunadario;
+    font-size: 50px;
+    color: $colorPrincipal;
+    text-align: center;
+}
+
+.contacto {
+
+    width: 60%;
+
+
+    .formulario {
+
+        font-weight: bolder;
+        font-size: 20px;
+        color: black;
+        padding: 15px;
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+
+        .area {
+            width: 400px;
+            height: 35px;
+            flex-grow: 1;
+        }
+
+        .mensaje {
+            width: 400px;
+            height: 400px;
+            font-size: 14px;
+            flex-grow: 1;
+        }
+
+        .boton {
+            margin-top: 15px;
+            margin-bottom: 10px;
+            padding: 3px 10px;
+            font-size: 16px;
+            border-radius: 10px;
+            color: $colorPrincipal;
+
+
+        }
+    }
+}
+
+.piecontacto {
+    display: grid;
+    justify-content: end;
+    align-content: end;
+
+}
+
+/*Fin Pagina Historia*/

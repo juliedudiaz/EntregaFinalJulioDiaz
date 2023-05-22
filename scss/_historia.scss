@@ -1,0 +1,77 @@
+/*Inicia Pagina Historia*/
+$colorPrincipal: #6b9080;
+$colorSecunadario: #a4c3b2;
+$colorLetra: #aef4f4;
+$letraSecundaria: #f6fff8;
+
+.caja {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "menu menu"
+        "H1 H1"
+        "historia arquitectura"
+        "historia arquitectura"
+        "pie pie";
+
+
+    .H1 {
+        font-size: 50px;
+        background-color: $letraSecundaria;
+        color: $colorPrincipal;
+        text-align: center;
+    }
+
+    .historia {
+        padding: 25px;
+    }
+    h2 {
+        font-size: 30px;
+        background-color: $letraSecundaria;
+        color: $colorPrincipal;
+        text-align: center;
+        padding: 25px;
+    }
+
+    p {
+        font-size: large;
+        color: black;
+        text-align: justify;
+        padding: 25px;
+    }
+
+    .arquitectura {
+        padding: 25px;
+
+    }
+    img {
+        padding: 25px;
+    }
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.H1 {
+    grid-area: H1;
+}
+
+.historia {
+    grid-area: historia;
+}
+
+.arquitectura {
+    grid-area: arquitectura;
+}
+
+.pie {
+    grid-area: pie;
+    display: grid;
+    justify-content: end;
+    align-content: end;
+}
+
+/*Fin Pagina Historia*/
